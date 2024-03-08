@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if (isset($valid_users[$username]) && $valid_users[$username] == $password) {
         if ($username === 'admin') {
-            $message = "<p style='color:green; font-size: 24px; font-weight:bold; text-align:center;'>Flag: CTF{aa4e966537c108ecd32d64096a6666ba96f15ec147a2aaec24d5ae26b7ad6e14}</p>";
+            $message = "<p style='color:green; font-size: 24px; font-weight:bold; text-align:center;</p>";
         } else {
             $message = "<p style='color:red; font-size: 24px; font-weight:bold; text-align:center;'>Not the right privileages! Try harder!</p>";
         }
